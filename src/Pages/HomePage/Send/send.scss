@@ -1,0 +1,155 @@
+@import "./../../../styles/scss/variables";
+
+.send {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 155px;
+    padding-right: 195px;
+    width: 100%;
+    background-color: $background4;
+    position: absolute;
+    top: 167%;
+}
+
+.send-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+        h1 {
+            font-size: 40px;
+            color: $color-letter2;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+        h5 {
+            padding-top: 20px;
+            font-size: 15px;
+            color: $color-letter2;
+            letter-spacing: 1px;
+            font-weight: 400;
+            width: 60%;
+        }
+    }
+
+    &-right {
+        &-icon {
+            color: $color-user3;
+            padding-right: 10px;
+        }
+        form {
+            display: flex;
+ 
+            .input {
+                padding: 20px 120px 20px 20px;
+                background-color: $background1;
+                box-shadow: $shadow1;
+                border-radius: 3px;
+                font-size: 15px;
+            }
+            button {
+                padding: 20px 20px;
+                background-color: $color-border1;
+                border-radius: 3px;
+                margin-left: 5px;
+                color: $color-letter3;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .send {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 75px;
+        padding-right: 75px;
+        top: 74%;
+    }
+
+    .send-content {  
+        &-left {
+            h1 {
+                font-size: 20px;
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+            h5 {
+                padding-top: 17px;
+                font-size: 8px;
+                font-weight: 400;
+                width: 62%;
+            }
+        }
+    
+        &-right {
+            &-icon {
+                padding-right: 5px;
+                padding-top: 3px;
+            }
+            form {
+                display: flex;
+     
+                .input {
+                    display: flex;
+                    padding: 10px 45px 10px 10px;
+                    font-size: 11px;
+                }
+                button {
+                    padding: 10px 10px;
+                    border-radius: 3px;
+                    margin-left: 2px;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px){
+    .send {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 55px;
+        padding-right: 40px;
+        top: 49%;
+    }
+
+    .send-content {  
+        &-left {
+            h1 {
+                font-size: 8px;
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+            h5 {
+                padding-top: 8px;
+                font-size: 3px;
+                font-weight: 400;
+                width: 62%;
+            }
+        }
+    
+        &-right {
+            &-icon {
+                padding-right: 3px;
+                padding-top: 1px;
+            }
+            form {
+                display: flex;
+     
+                .input {
+                    padding: 5px 25px 5px 5px;
+                    font-size: 5px;
+                    display: flex;
+                }
+                button {
+                    padding: 5px 5px;
+                    margin-left: 1px;
+                    font-size: 4px;
+                }
+            }
+        }
+    }
+}
