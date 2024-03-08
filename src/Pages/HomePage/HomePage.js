@@ -3,6 +3,8 @@ import Header from "./Header/Header";
 import Banner from "./Banner/Banner";
 import Restaurants from "./Restaurants/Restaurants";
 import Send from "./Send/Send";
+import Specialities from "./Specialities/Specialities";
+import Menu from "./Menu/Menu";
 
 function HomePage() {
   return (
@@ -11,6 +13,8 @@ function HomePage() {
       <Banner />
       <Restaurants />
       <Send />
+      <Specialities />
+      <Menu />
     </div>
   );
 }

@@ -1,0 +1,149 @@
+@import "./../../../styles/scss/variables";
+
+.specialities {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 85px;
+  padding-right: 85px;
+  position: absolute;
+  width: 100%;
+  top: 200%;
+}
+
+.spe-content {
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      color: $color-letter2;
+      font-size: 36px;
+      letter-spacing: 3px;
+      font-weight: 400;
+    }
+
+    &-right {
+      background-color: $background3;
+      padding: 10px 20px;
+      border-radius: 3px;
+      font-size: 13px;
+      color: $color-user2;
+      font-weight: 500;
+    }
+  }
+
+  &-swiper {
+    width: 102%;
+    margin-left: -15px;
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 15px;
+      color: $color-user1;
+      padding: 10px 14px;
+      background-color: $shadow2;
+      border-radius: 50%;
+      font-weight: 500;
+    }
+    .swiper-button-next::after {
+      margin-left: 16px;
+    }
+    .swiper-button-prev::after {
+      margin-right: 16px;
+    }
+    .spe-content-swiper-img {
+      width: 180px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .specialities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 85px;
+    position: absolute;
+    width: 100%;
+    top: 88%;
+  }
+  .spe-content {
+    &-title {
+      &-left {
+        font-size: 23px;
+      }
+
+      &-right {
+        font-size: 13px;
+        padding: 5px 13px;
+        margin-right: -53px;
+      }
+    }
+
+    &-swiper {
+      width: 110%;
+      margin-left: -5px;
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-size: 8px;
+      }
+      .swiper-button-next::after {
+        margin-left: 38px;
+      }
+      .swiper-button-prev::after {
+        margin-right: 26px;
+      }
+    }
+    .spe-content-swiper-img {
+      width: 94px;
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .specialities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 85px;
+    position: absolute;
+    width: 100%;
+    top: 58%;
+  }
+
+  .spe-content {
+    &-title {
+      &-left {
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+
+      &-right {
+        font-size: 7px;
+        padding: 3px 10px;
+        margin-right: -60px;
+      }
+    }
+
+    &-swiper {
+      width: 123%;
+      margin-left: -2px;
+      padding-top: 10px;
+
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-size: 4px;
+        padding: 4px 8px;
+      }
+      .swiper-button-next::after {
+        margin-left: 44px;
+      }
+      .swiper-button-prev::after {
+        margin-right: 44px;
+      }
+      .spe-content-swiper-img {
+        width: 50px;
+      }
+    }
+  }
+}

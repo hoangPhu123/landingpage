@@ -1,0 +1,39 @@
+@import "./../../../styles/scss/variables";
+
+.kit {
+    background: url(./../../../assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    top: 250%;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    &-content {
+        padding-left: 340px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .kit {
+        width: 100%;
+        top: 108%;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        &-content {
+            padding-left: 175px;
+        }
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px){
+    .kit {
+        width: 100%;
+        top: 76%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        &-content {
+            padding-left: 95px;
+        }
+    }
+}
