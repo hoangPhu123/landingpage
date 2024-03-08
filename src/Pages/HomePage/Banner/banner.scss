@@ -1,0 +1,192 @@
+@import "/src/styles/scss/variables";
+
+.banner {
+  position: relative;
+}
+
+.banner-content {
+  padding-left: 100px;
+}
+
+.left-banner {
+  h1 {
+    position: absolute;
+    top: 5rem;
+    color: $color-letter2;
+    letter-spacing: 8px;
+    font-size: 60px;
+    line-height: 10vh;
+    width: 40%;
+  }
+  .left-banner-content {
+    position: absolute;
+    top: 19rem;
+    .left-element,
+    .right-element {
+      border: solid 2px $color-border1;
+      padding: 16px 24px;
+      margin-right: 23px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.right-banner {
+  position: absolute;
+  right: 8%;
+}
+
+.delivery {
+  position: absolute;
+  width: 73%;
+  height: 104px;
+  left: 0px;
+  top: 520px;
+  padding-left: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  .delivery-content {
+    display: flex;
+    align-items: center;
+    padding-right: 56px;
+    img {
+      width: 85px;
+      height: 55px;
+      padding-right: 13px;
+    }
+    h3 {
+      color: $color-letter2;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-content {
+    padding-left: 40px;
+  }
+  .left-banner {
+    h1 {
+      top: 4rem;
+      font-size: 28px;
+      line-height: 27px;
+      font-weight: 400;
+      width: 33%;
+      letter-spacing: 3px;
+    }
+    .left-banner-content {
+      position: absolute;
+      top: 11rem;
+      .left-element,
+      .right-element {
+        padding: 2px 13px;
+        h2 {
+          font-size: 0.7rem;
+        }
+        h5 {
+          font-size: 0.4rem;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+  .right-banner {
+    position: absolute;
+    top: 9%;
+    img {
+      width: 65%;
+      margin-left: 290px;
+    }
+  }
+
+  .delivery {
+    position: absolute;
+    width: 60%;
+    height: 44px;
+    left: 0px;
+    top: 380px;
+    padding-left: 40px;
+
+    align-items: center;
+    .delivery-content {
+      display: flex;
+      align-items: center;
+      padding-right: 16px;
+      img {
+        width: 65px;
+        height: 35px;
+        padding-right: 13px;
+      }
+      h3 {
+        color: $color-letter2;
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .banner-content {
+    padding-left: 40px;
+  }
+  .left-banner {
+    h1 {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      width: 37%;
+      letter-spacing: 3px;
+      top: 1.5rem;
+    }
+    .left-banner-content {
+      position: absolute;
+      top: 4.5rem;
+      .left-element,
+      .right-element {
+        padding: 0 10px;
+        margin-right: 17px;
+        h2 {
+          font-size: 0.3rem;
+          margin-top: 5px;
+          line-height: 0;
+        }
+        h5 {
+          font-size: 0.3rem;
+        }
+      }
+    }
+  }
+  .right-banner {
+    position: absolute;
+    top: 8px;
+    img {
+      width: 35%;
+      margin-left: 260px;
+    }
+  }
+
+  .delivery {
+    position: absolute;
+    width: 68%;
+    height: 44px;
+    left: 0px;
+    top: 110px;
+    padding-left: 40px;
+
+    align-items: center;
+    .delivery-content {
+      display: flex;
+      align-items: center;
+      padding-right: 16px;
+      img {
+        width: 25px;
+        height: 15px;
+        padding-right: 13px;
+      }
+      h3 {
+        color: $color-letter2;
+        font-size: 0.3rem;
+      }
+    }
+  }
+}

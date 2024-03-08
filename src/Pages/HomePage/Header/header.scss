@@ -1,0 +1,64 @@
+@import "/src/styles/scss/variables.scss";
+
+.container-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.leftHeader {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  img {
+    width: 30%;
+    height: 100%;
+  }
+}
+.rightHeader {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 15%;
+  color: $color-user1;
+  .login {
+    display: flex;
+    padding-right: 6%;
+    .logo {
+      padding-right: 4px;
+    }
+    h3 {
+      font-weight: 400;
+    }
+  }
+  .menu {
+    padding-left: 7%;
+    .logo-menu {
+        width: 25px;
+        height: 25px;
+        background: $background1;
+        /* Base shadow */
+        box-shadow: $menu-logo;
+        border-radius: solid 25px $menu-logo;
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .leftHeader {
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .leftHeader {
+    padding-left: 40px;
+    img {
+      width: 50%;
+      height: 75%;
+    }
+  }
+}
