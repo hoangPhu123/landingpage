@@ -5,6 +5,8 @@ import Restaurants from "./Restaurants/Restaurants";
 import Send from "./Send/Send";
 import Specialities from "./Specialities/Specialities";
 import Menu from "./Menu/Menu";
+import Map from "./Map/Map";
+import Insta from "./Insta/Insta";
 
 function HomePage() {
   return (
@@ -15,6 +17,8 @@ function HomePage() {
       <Send />
       <Specialities />
       <Menu />
+      <Map />
+      <Insta />
     </div>
   );
 }
