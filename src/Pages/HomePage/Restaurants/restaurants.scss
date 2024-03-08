@@ -1,0 +1,140 @@
+@import "./../../../styles/scss/variables";
+.restaurant {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 85px;
+  padding-right: 85px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+}
+
+.resta-content {
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      color: $color-letter2;
+      font-size: 36px;
+      letter-spacing: 3px;
+      font-weight: 400;
+    }
+
+    &-right {
+      background-color: $background3;
+      padding: 10px 20px;
+      border-radius: 3px;
+      font-size: 13px;
+      color: $color-user2;
+      font-weight: 500;
+    }
+  }
+
+  &-swiper {
+    width: 102%;
+    margin-left: -15px;
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 10px;
+      color: $color-user1;
+      padding: 10px 14px;
+      background-color: $background1;
+      border-radius: 50%;
+      font-weight: 400;
+    }
+    .swiper-button-next::after {
+      margin-left: 16px;
+    }
+    .swiper-button-prev::after {
+      margin-right: 16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurant {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 85px;
+    position: absolute;
+    width: 100%;
+    top: 48%;
+  }
+
+  .resta-content {
+    &-title {
+      &-left {
+        font-size: 23px;
+      }
+
+      &-right {
+        font-size: 13px;
+        padding: 5px 13px;
+        margin-right: -53px;
+      }
+    }
+
+    &-swiper {
+      width: 110%;
+      margin-left: -5px;
+
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-size: 8px;
+      }
+      .swiper-button-next::after {
+        margin-left: 36px;
+      }
+      .swiper-button-prev::after {
+        margin-right: 36px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+    .restaurant {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 85px;
+        position: absolute;
+        width: 100%;
+        top: 28%;
+      }
+    
+      .resta-content {
+        &-title {
+          &-left {
+            font-size: 13px;
+            letter-spacing: 2px;
+          }
+    
+          &-right {
+            font-size: 7px;
+            padding: 3px 10px;
+            margin-right: -60px;
+          }
+        }
+    
+        &-swiper {
+          width: 123%;
+          margin-left: -2px;
+          padding-top: 10px;
+    
+          .swiper-button-prev::after,
+          .swiper-button-next::after {
+            font-size: 4px;
+            padding: 4px 8px;
+          }
+          .swiper-button-next::after {
+            margin-left: 44px;
+          }
+          .swiper-button-prev::after {
+            margin-right: 44px;
+          }
+        }
+      }
+}
