@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was deployed [HERE](https://landingpage-one-xi.vercel.app/).
+
+Link github: [https://github.com/hoangPhu123/landingpage](https://github.com/hoangPhu123/landingpage)
 
 ## Available Scripts
 
