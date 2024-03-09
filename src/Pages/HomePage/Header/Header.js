@@ -17,7 +17,7 @@ function Header() {
 
         <div className="rightHeader">
           <div className="login">
-            <div className="logo">
+            <div className="logo ">
               <FontAwesomeIcon icon={faUser} />
             </div>
 

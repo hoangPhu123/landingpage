@@ -34,23 +34,31 @@
   .menu {
     padding-left: 7%;
     .logo-menu {
-        width: 25px;
-        height: 25px;
-        background: $background1;
-        /* Base shadow */
-        box-shadow: $menu-logo;
-        border-radius: solid 25px $menu-logo;
-        /* Inside auto layout */
-        flex: none;
-        order: 2;
-        flex-grow: 0;
+      width: 25px;
+      height: 25px;
+      background: $background1;
+      /* Base shadow */
+      box-shadow: $menu-logo;
+      border-radius: solid 25px $menu-logo;
+      /* Inside auto layout */
+      flex: none;
+      order: 2;
+      flex-grow: 0;
     }
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .leftHeader {
     padding-left: 40px;
+  }
+  .logo, .cart, .menu {
+    font-size: 15px;
+  }
+  .cart {
+    h9 {
+      font-size: 15px;
+    }
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 767px) {
@@ -59,6 +67,19 @@
     img {
       width: 50%;
       height: 75%;
+    }
+  }
+  .logo, .cart, .menu {
+    font-size: 12px;
+  }
+  .login {
+    h3 {
+      font-size: 13px;
+    }
+  }
+  .cart {
+    h9 {
+      font-size: 11px;
     }
   }
 }

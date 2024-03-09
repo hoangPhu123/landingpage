@@ -1,0 +1,48 @@
+@import "./../../../styles/scss/variables";
+
+.footer {
+    position: absolute;
+    top: 467%;
+    width: 100%;
+    background-color: $background5;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .footer {
+        top: 184%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+    .footer {
+        top: 130%;
+        padding-left: 50px;
+        padding-right: 10px;
+        .footer-title {
+            margin-bottom: -10px;
+        }
+        .footer-title1 {
+            margin-bottom: -30px;
+        }
+        .footer-title-menu {
+            font-size: 22px;
+        }
+        .footer-title-link {
+            font-size: 15px;
+        }
+
+        .copyrights {
+            margin-right: 50px;
+            .footer-rights {
+                padding-left: 30px;
+                font-size: 10px;
+            }
+        }
+
+
+    }
+}

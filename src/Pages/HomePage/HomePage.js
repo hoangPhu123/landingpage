@@ -7,6 +7,7 @@ import Specialities from "./Specialities/Specialities";
 import Menu from "./Menu/Menu";
 import Map from "./Map/Map";
 import Insta from "./Insta/Insta";
+import Footer from "./Footer/Footer";
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
       <Menu />
       <Map />
       <Insta />
+      <Footer />
     </div>
   );
 }
